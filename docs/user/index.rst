@@ -225,7 +225,7 @@ Python client, and automate external integrations with webhooks.
 * **Tutorial**:
   :ref:`Get started with launchpadlib <launchpadlib-tutorial>`
 * **Use the API**:
-  :ref:`Launchpad web services API <launchpad-web-services-api>` •
+  :ref:`Launchpad API <launchpad-api>` •
   :ref:`Sign web requests <sign-web-requests>` •
   :ref:`Using launchpadlib <using-launchpadlib>` •
   :ref:`The Python API <use-the-python-api>` •

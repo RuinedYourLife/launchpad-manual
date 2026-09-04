@@ -7,8 +7,6 @@
 Sign web requests
 =================
 
-.. include:: /includes/important_not_revised_help.rst
-
 Launchpad's web service only responds to requests that have been digitally
 signed with a Launchpad user's authorization key. Unsigned requests receive a
 ``401 Unauthorized`` response.
@@ -43,7 +41,7 @@ Get a request token
 
 The request token lets Launchpad track your program between steps. To obtain
 one, send a form-URL-encoded POST request to
-``<https://launchpad.net/+request-token>``_ (*not* ``api.launchpad.net``) with:
+``https://launchpad.net/+request-token`` (*not* ``api.launchpad.net``) with:
 
 - ``oauth_consumer_key``: your consumer key
 - ``oauth_signature_method``: the string ``PLAINTEXT``
@@ -98,7 +96,7 @@ Once the user has delegated their authority (a website knows this when
 Launchpad hits its ``oauth_callback``; a standalone program when the user
 signals they're done), exchange the temporary token for permanent credentials.
 
-Send a form-encoded POST request to ``<https://launchpad.net/+access-token>``_
+Send a form-encoded POST request to ``https://launchpad.net/+access-token``
 (again, *not* ``api.launchpad.net``) with:
 
 - ``oauth_token``: the ``oauth_token`` from the previous response
